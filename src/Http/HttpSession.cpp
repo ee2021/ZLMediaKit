@@ -217,6 +217,7 @@ bool HttpSession::checkLiveStream(const string &schema, const string  &url_suffi
             }
             strong_self->_is_live_stream = true;
             //触发回调
+            // found the live stream
             cb(src);
         });
     };
